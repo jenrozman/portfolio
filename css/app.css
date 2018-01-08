@@ -1,0 +1,248 @@
+/*Amatic*/
+@font-face {
+		font-family: 'amaticbold';
+		src: url('../fonts/amatic-bold-webfont.woff2') format('woff2'),
+				 url('../fonts/amatic-bold-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;}
+/*Dual*/
+@font-face {
+	font-family: 'dual300';
+	src: url('../fonts/dual-300-webfont.woff2') format('woff2'),
+	url('../fonts/dual-300-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;}
+
+body {  background-image: url("../images/back.png");}
+
+/*Index*/
+#indBody{
+	 background-image: url("../images/darkback.png");
+}
+.logo{margin-top: 75px;}
+
+.tagline{
+	font-family: 'amaticbold', times, serif;
+	font-size: 2em;
+	color: #84201c;
+	text-align: center;
+}
+.period{color: white;}
+
+.enterButt{
+  border-radius: 5px;
+	font-family: 'dual300', times, serif;
+  background-color: rgba(255, 255, 255, 0.99);
+  border:.2rem solid rgba(255, 255, 255, 1);
+  text-align: center;
+  font-size: 1.125em;
+  padding: 5px;
+  width: 150px;
+  transition: all 0.5s;
+  margin: 0 auto;
+	margin-left: 45%;
+}
+.enterButt:hover{
+	background-color: rgba(255, 255, 255, 0.77);
+	border-radius: 10px;
+}
+.enterButt span {
+  cursor: grabbing;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+	color: #231f20;
+}
+.enterButt span:after {
+  content: '\2193';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.enterButt:hover span {padding-right: 25px;}
+.enterButt:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/*Header*/
+.head	{
+	background-image: url("../images/darkback.png");
+	padding-top: 15px;}
+
+#name {
+		font-family: 'dual300', times, serif;
+		font-size: 1.250em;
+		color: white;
+		text-align: center;
+		padding-left: 15px;
+		letter-spacing: 1.5px;
+		font-weight: 600;
+		padding-bottom: 0px;
+		padding-top: 5px;}
+
+p{margin-bottom: 0px;}
+
+#main-menu ul li a{
+	font-size: 1.875em;
+	font-family: 'amaticbold', times, serif;
+	color: white;
+
+}
+#main-menu ul li {
+	list-style: none;
+	text-align: center;
+    }
+
+#main-menu ul li a:hover{
+	color: rgba(132, 32, 28, 1);
+	text-decoration: underline;
+	text-decoration-color: white;
+}
+.active {
+	color: rgba(132, 32, 28, 1);
+	text-decoration: underline;
+	text-decoration-color: rgba(132, 32, 28, 1);
+}
+.title-bar{ background-color: rgba(35, 31, 32, 0);}
+
+
+/*About*/
+#about{padding-top: 15px;}
+.about{
+	font-size: 1.375em;
+	font-family: 'amaticbold', times, serif;
+	color: rgba(35, 31, 32, 1);
+	padding: 10px;
+	text-align: center;
+}
+
+
+
+.copy
+{font-size: .625em;
+text-align: center;}
+
+/*Skills*/
+.skills{
+	margin: 10px 0  0 0;
+	background: rgba(192, 46, 41, 1);
+	border-radius: 6px 6px 0 0;
+	padding: 15px;
+
+}
+#myDIV {
+		border-radius: 6px;
+    background-color: rgba(192, 46, 41, 1);
+		padding-top: 5px;
+}
+.skicon{
+	padding-top: 15px;
+}
+
+/*Portfolio*/
+.port{
+	margin-top: 25px;
+}
+
+/* Style the buttons */
+.btn {
+	color: rgba(35, 31, 32, 1);
+	font-size: 1em;
+	font-family: 'dual300', times, serif;
+  cursor: pointer;
+}
+
+.showall{
+	font-family: 'amatic', times, serif;
+	font-size: 3em;
+}
+
+
+
+
+
+
+/*Contact*/
+#contact{
+	background-image: url("../images/tree.jpg");
+	background-repeat: no-repeat;
+	margin-top: 30px;
+
+}
+.contactinfo{
+	font-size: 2.500em;
+	font-family: 'amaticbold', times, serif;
+	color: white;
+	text-align: center;
+	padding-top: 25px;
+
+}
+
+
+#Form {margin:10px 0 25px 0;}
+
+input#contname, #email, #message{
+	font-family: 'dual300', times, serif;
+	border-radius: 3px;
+	color: black;
+}
+input::placeholder{color: #231f20;
+}
+
+#submit{
+	border-radius: 6px;
+	font-family: 'dual300', times, serif;
+	margin: 0 auto;
+	display: block;
+
+}
+
+/*Media Queries*/
+@media screen and (min-width: 31.250em)/*500 and larger*/
+{
+
+	.enterButt{
+	  font-size: 1.563em;
+	  padding: 5px;
+	  width: 200px;
+	}
+}
+
+@media screen and (min-width: 40.000em)/*640 and larger*/
+{
+
+	.enterButt{
+	  font-size: 1.5em;
+	  padding: 5px;
+	  width: 190px;
+	  transition: all 0.5s;
+	  margin: 0 auto;
+		margin-left: 15%;
+	}
+	.tagline{
+		font-size: 3em;
+	}
+}
+
+@media screen and (min-width: 80.313em)/*640 and larger*/
+{
+	.tagline{
+		font-size: 3.125em;
+	}
+}
+
+
+@media screen and (max-width: 64.0625em)/*1024 -and smaller*/
+{
+	.ringLogo{display: none;	}
+}
+
+@media screen and (min-width: 500px)
+{
+	.ringText{font-size: 2em;}
+	.gallery{font-size: 4em;}
+}
