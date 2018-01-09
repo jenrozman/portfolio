@@ -71,27 +71,19 @@ body {  background-image: url("../images/back.png");}
 /*Header*/
 .head	{
 	background-image: url("../images/darkback.png");
-	padding-top: 15px;}
+	padding: 15px 0 10px 0;
+}
 
-#name {
-		font-family: 'dual300', times, serif;
-		font-size: 1.250em;
-		color: white;
-		text-align: center;
-		padding-left: 15px;
-		letter-spacing: 1.5px;
-		font-weight: 600;
-		padding-bottom: 0px;
-		padding-top: 5px;}
-
+.top{padding-top: 5px;}
 p{margin-bottom: 0px;}
-
 #main-menu ul li a{
 	font-size: 1.875em;
 	font-family: 'amaticbold', times, serif;
 	color: white;
-
+	padding-right: 50px;
 }
+.nav{padding-top: 20px;}
+
 #main-menu ul li {
 	list-style: none;
 	text-align: center;
@@ -109,18 +101,23 @@ p{margin-bottom: 0px;}
 }
 .title-bar{ background-color: rgba(35, 31, 32, 0);}
 
-
 /*About*/
-#about{padding-top: 15px;}
-.about{
-	font-size: 1.375em;
-	font-family: 'amaticbold', times, serif;
-	color: rgba(35, 31, 32, 1);
-	padding: 10px;
+.about{margin-top: 25px;}
+
+.orbit-caption{
 	text-align: center;
+	font-family: 'dual300', times, serif;
+		font-size: 1em;
+		 line-height: 1.2;
 }
+  .orbit-bullets button{
+		border-radius: 0%;
+		width: 60px;
+		background-color:rgba(132, 32, 28, 1)}
 
+.orbit-bullets button:hover{background-color:rgba(30, 28, 28, .9);}
 
+.orbit-bullets button.is-active{background-color:rgba(30, 28, 28, .9);}
 
 .copy
 {font-size: .625em;
@@ -161,26 +158,27 @@ text-align: center;}
 	font-size: 3em;
 }
 
-
-
-
-
-
 /*Contact*/
 #contact{
-	background-image: url("../images/tree.jpg");
-	background-repeat: no-repeat;
-	margin-top: 30px;
-
-}
+	margin-top: 10px;
+padding-top: 100px;}
 .contactinfo{
 	font-size: 2.500em;
 	font-family: 'amaticbold', times, serif;
 	color: white;
 	text-align: center;
 	padding-top: 25px;
-
 }
+
+.tree{
+    background-image: url("../images/tree.jpg");
+		height:  625px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 #Form {margin:10px 0 25px 0;}
@@ -226,23 +224,26 @@ input::placeholder{color: #231f20;
 	.tagline{
 		font-size: 3em;
 	}
+	#main-menu ul li a{
+		font-size: 3em;
+
+	}
+	#main-menu ul li {display: inline;}
+
+	.orbit-caption{font-size: 1.250em;}
+
+	  .orbit-bullets button{width: 150px;}
+
+	.orbit-bullets button:hover{background-color:rgba(30, 28, 28, .9);}
+
+	.orbit-bullets button.is-active{background-color:rgba(30, 28, 28, .9);}
+
+
 }
 
-@media screen and (min-width: 80.313em)/*640 and larger*/
+@media screen and (min-width: 80.313em)/*1285 and larger*/
 {
 	.tagline{
 		font-size: 3.125em;
 	}
-}
-
-
-@media screen and (max-width: 64.0625em)/*1024 -and smaller*/
-{
-	.ringLogo{display: none;	}
-}
-
-@media screen and (min-width: 500px)
-{
-	.ringText{font-size: 2em;}
-	.gallery{font-size: 4em;}
 }
