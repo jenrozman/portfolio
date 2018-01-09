@@ -144,6 +144,7 @@ text-align: center;}
 .port{
 	margin-top: 25px;
 }
+.portInfo{display:none;}
 
 /* Style the buttons */
 .btn {
@@ -172,14 +173,12 @@ padding-top: 100px;}
 
 .tree{
     background-image: url("../images/tree.jpg");
-		height:  625px;
+	height:  700px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
 
 #Form {margin:10px 0 25px 0;}
 
@@ -198,6 +197,9 @@ input::placeholder{color: #231f20;
 	display: block;
 
 }
+
+
+
 
 /*Media Queries*/
 @media screen and (min-width: 31.250em)/*500 and larger*/
@@ -232,11 +234,13 @@ input::placeholder{color: #231f20;
 
 	.orbit-caption{font-size: 1.250em;}
 
-	  .orbit-bullets button{width: 150px;}
+	.orbit-bullets button{width: 150px;}
 
 	.orbit-bullets button:hover{background-color:rgba(30, 28, 28, .9);}
 
 	.orbit-bullets button.is-active{background-color:rgba(30, 28, 28, .9);}
+
+	.tree{height:  600px;}
 
 
 }
