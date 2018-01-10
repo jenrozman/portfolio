@@ -1,3 +1,25 @@
+<?php
+require_once("admin/scripts/config.php");
+
+if(isset($_POST['submit'])){
+
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+  $robot = $_POST['notrobot'];
+  $direct = "thanks.php";
+
+  if($robot == ""){
+    $mail = submitMessage($name, $email, $message, $direct);
+  }else{
+    die("Get out of here Terminator!");
+    exit();
+  }
+}
+?>
+
+
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
@@ -28,7 +50,7 @@
                         <li><a href="about.html">About Me</a></li>
                         <li><a href="skills.html">Skills</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a class="active" href="contact.html">Contact Me</a></li>
+                        <li><a class="active" href="contact.php">Contact Me</a></li>
                     </ul>
                 </div>
            </nav>
@@ -49,9 +71,10 @@
           <section id="Form">
             <h2 class="hide">Form</h2>
           <form action="form.php" id="contactForms" method="post" >
-              <input type="text" required id="contname" placeholder="Name">
-              <input type="email" required id="email" placeholder="Email">
-              <input type="text" required id="message" placeholder="Message">
+              <input name='name' type="text" required id="contname" placeholder="Name">
+              <input name='email' type="email" required id="email" placeholder="Email">
+              <input name='notrobot' class="hide" type="text" required id="robot" placeholder="Address">
+              <input name='message' type="text" required id="message" placeholder="Message">
               <input id="submit" type="submit" value="Submit">
             </form>
           </section>

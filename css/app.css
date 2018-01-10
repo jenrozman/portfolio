@@ -12,7 +12,7 @@
 	url('../fonts/dual-300-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;}
-
+.hide{display:none;}
 body {  background-image: url("../images/back.png");}
 
 /*Index*/
@@ -125,20 +125,18 @@ text-align: center;}
 
 /*Skills*/
 .skills{
-	margin: 10px 0  0 0;
 	background: rgba(192, 46, 41, 1);
 	border-radius: 6px 6px 0 0;
-	padding: 15px;
-
-}
-#myDIV {
-		border-radius: 6px;
-    background-color: rgba(192, 46, 41, 1);
-		padding-top: 5px;
+	padding: 0 15px 0 15px;
 }
 .skicon{
-	padding-top: 15px;
+	padding: 10px 0 0 25px;
+	border-radius: 0 6px 6px 6px;
+	background: rgba(192, 46, 41, 1);
+
 }
+
+
 
 /*Portfolio*/
 .port{
@@ -173,7 +171,7 @@ padding-top: 100px;}
 
 .tree{
     background-image: url("../images/tree.jpg");
-	height:  700px;
+		height:  700px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -195,11 +193,7 @@ input::placeholder{color: #231f20;
 	font-family: 'dual300', times, serif;
 	margin: 0 auto;
 	display: block;
-
 }
-
-
-
 
 /*Media Queries*/
 @media screen and (min-width: 31.250em)/*500 and larger*/
@@ -214,7 +208,6 @@ input::placeholder{color: #231f20;
 
 @media screen and (min-width: 40.000em)/*640 and larger*/
 {
-
 	.enterButt{
 	  font-size: 1.5em;
 	  padding: 5px;
@@ -223,13 +216,10 @@ input::placeholder{color: #231f20;
 	  margin: 0 auto;
 		margin-left: 15%;
 	}
-	.tagline{
-		font-size: 3em;
-	}
-	#main-menu ul li a{
-		font-size: 3em;
+	.tagline{font-size: 3em;}
 
-	}
+	#main-menu ul li a{font-size: 3em;}
+
 	#main-menu ul li {display: inline;}
 
 	.orbit-caption{font-size: 1.250em;}

@@ -1,5 +1,5 @@
 <?php
-	//this page connects you to the db
+//connects you to the db
 $user = "root";//locally only, unless we go in and change it
 $pass = "";//windows
 //$pass = "root"; for Mac
