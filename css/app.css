@@ -136,8 +136,6 @@ text-align: center;}
 
 }
 
-
-
 /*Portfolio*/
 .port{
 	margin-top: 25px;
@@ -312,3 +310,5 @@ input::placeholder{color: #231f20;
 		font-size: 3.125em;
 	}
 }
+.skicon{display:none;}
+.mystyle{display: inline-block;}

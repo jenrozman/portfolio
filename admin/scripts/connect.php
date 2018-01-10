@@ -9,7 +9,7 @@ $conn = mysqli_connect($url, $user, $pass, $db);
 //Ticket to access our db, calling it
 $link = mysqli_connect($url, $user, $pass, $db); //holds our access token, for PC
 //$link = mysqli_connect($url, $user, $pass, $db, "8889"); - for mac the # are the ports
-//check connection if it fails, and will tell what failes
+//check connection if it fails, and will tell what fails
 if(mysqli_connect_errno()){
 	printf("Connect Failed: %s\n", mysqli_connect_error()); //echo spits out anything, printf has to be a string
 	//the %s\n

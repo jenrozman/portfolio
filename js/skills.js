@@ -1,17 +1,12 @@
-function toggleDocs(event) {
+//var clicky = document.querySelectorAll(".skiButt")
 
-    if (event.target && event.target.className == 'clickable-heading') {
+//function myFunction() {
+  //  alert ("Hello World!");
+//}
 
-        var next = event.target.nextElementSibling;
+//clicky.addEventListener("click", myFunction, false);
 
-
-        if (next.style.display == "none") {
-            next.style.display = "inline-block";
-
-        } else {
-            next.style.display = "none";
-        }
-    }
+function myFunction() {
+  var element = document.getElementById('myDIV', 'myDIV2');
+  element.classList.toggle("mystyle");
 }
-
-document.addEventListener('click', toggleDocs, true);

@@ -17,7 +17,6 @@ echo json_encode($rows);
 if (isset($_GET["portImg"])) { // check to see if a query parameter exists
   $port = $_GET["portImg"];
 
-  // pass in the car variable using the location bar in the browser (?carModel=F56)
   $myQuery = "SELECT * FROM tbl_portfolio WHERE portfolio_img = '$port'";
   // send the query
   $result = mysqli_query($conn, $myQuery);
