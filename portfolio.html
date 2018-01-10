@@ -37,94 +37,90 @@
 
 
    <div class="row">
-     <div class="small-12  medium-6 port large-6 columns"><img src="images/port1.jpg" alt="port1"><p class="portInfo">This is stuff I did for people</p></div>
-     <div class="small-12  medium-6 port large-6 columns"><img src="images/port1.jpg" alt="port1"><p class="portInfo">This is stuff I did for people</p></div>
+     <div class="small-4 columns">
+       <img src="images/port1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+     </div>
+     <div class=" small-4 columns">
+       <img src="images/port2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+     </div>
+     <div class="small-4 columns">
+       <img src="images/port3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+     </div>
    </div>
    <div class="row">
-     <div class="small-12  medium-6 port large-6 columns"><img src="images/port1.jpg" alt="port1"><p class="portInfo">This is stuff I did for people</p></div>
-     <div class="small-12  medium-6 port large-6 columns"><img src="images/port1.jpg" alt="port1"><p class="portInfo">This is stuff I did for people</p></div>
-   </div>
-   <div class="row">
-     <div class="small-12  medium-6 port large-6 columns"><img src="images/port1.jpg" alt="port1"><p class="portInfo">This is stuff I did for people</p></div>
-     <div class="small-12  medium-6 port large-6 columns"><img src="images/port1.jpg" alt="port1"><p class="portInfo">This is stuff I did for people</p></div>
-   </div>
-
-
-
-
-
-
-<!--
-<section class="row">
-  <div class="small-12  large-8 columns">
-     <div id="myBtnContainer">
-       <button class="btn active showall" onclick="filterSelection('all')"> Show all</button>
-       <button class="btn" onclick="filterSelection('gd')"> Graphic Design</button>
-       <button class="btn" onclick="filterSelection('frontend')"> Front End Web Development</button>
-       <button class="btn" onclick="filterSelection('photog')"> Photography</button>
-       <button class="btn" onclick="filterSelection('brand')"> Branding</button>
+     <div class="small-4 columns">
+       <img src="images/port4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+     </div>
+     <div class=" small-4 columns">
+       <img src="images/port5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+     </div>
+     <div class="small-4 columns">
+       <img src="images/port6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
      </div>
    </div>
 
- <section class="row" id="port">
+   <!-- Lightbox -->
+   <div id="myModal" class="modal">
+     <span class="close cursor" onclick="closeModal()">&times;</span>
+     <div class="modal-content">
 
-       <div class="filterDiv brand photog">
-          <div class="small-12 small-centered large-4 columns">
-            <div class="container">
-                <img class="portimg" src="images/port1.jpg" alt="port1">
-                <div class="center"><P>Work done for City of London Rippers</P></div>
-            </div>
-        </div>
-      </div>
+       <div class="mySlides">
+         <img src="images/port1.jpg" style="width:100%" alt="image1">
+       </div>
 
-       <div class="filterDiv gd">
-          <div class="small-12 small-centered large-4 columns">
-            <div class="container">
-                <img class="portimg" src="images/port2.jpg" alt="port1">
-                <div class="center"><P>Work done for City of London Rippers</P></div>
-            </div>
-          </div>
-      </div>
-</section>
+       <div class="mySlides">
+         <img src="images/port2.jpg" style="width:100%" alt="image2">
+       </div>
+
+       <div class="mySlides">
+         <img src="images/port3.jpg" style="width:100%" alt="image3">
+       </div>
+
+       <div class="mySlides">
+         <img src="images/port4.jpg" style="width:100%" alt="image1">
+       </div>
+
+       <div class="mySlides">
+         <img src="images/port5.jpg" style="width:100%" alt="image2">
+       </div>
+
+       <div class="mySlides">
+         <img src="images/port6.jpg" style="width:100%" alt="image3">
+       </div>
 
 
 
 
+       <!-- Caption text -->
+       <div class="caption-container">
+         <p id="caption"></p>
+       </div>
 
-       <div class="filterDiv brand"><section class="row" id="port">
-          <div class="small-12 small-centered large-4 columns">
-            <div class="container">
-              <img class="portimg" src="images/port3.jpg" alt="port1">
-              <div class="center"><P>Work done for City of London Rippers</P></div>
-            </div>
-        </section>
-</div>
-       <div class="filterDiv gd frontend"><section class="row" id="port">
-          <div class="small-12 small-centered large-4 columns">
-            <div class="container">
-              <img class="portimg" src="images/port4.jpg" alt="port1">
-              <div class="center"><P>Work done for City of London Rippers</P></div>
-            </div>
-        </section>
-</div>
-       <div class="filterDiv brand"><section class="row" id="port">
-          <div class="small-12 small-centered large-4 columns">
-            <div class="container">
-              <img class="portimg" src="images/tree.jpg" alt="port1">
-              <div class="center"><P>Work done for City of London Rippers</P></div>
-            </div>
-        </section>
-</div>
-       <div class="filterDiv frontend"><section class="row" id="port">
-          <div class="small-12 small-centered large-4 columns">
-            <div class="container">
-              <img class="portimg" src="images/port1.jpg" alt="port1">
-              <div class="center"><P>Work done for City of London Rippers</P></div>
-            </div>
-        </section>
-</div>
+       <!-- Thumbnail image controls -->
+       <div class="column">
+         <img class="demo" src="images/port1.jpg" onclick="currentSlide(1)" alt="This website was a rejuvenate and reboot an apple picking farm’s website, Crunican Orchards. I decided to start with their logo, making it a simple yet effective. I styled the name, and decided to put an apple on top so people would refer to their apple-picking company. With their website, I tried my best to use the colour red as much as possible, since people refer the colour red too apples. The colour scheme I choose was red and white. Their background was a wood texture, since their wooden store is in most of their photos and popular.">
+       </div>
+
+       <div class="column">
+         <img class="demo" src="images/port2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+       </div>
+
+       <div class="column">
+         <img class="demo" src="images/port3.jpg" onclick="currentSlide(3)" alt="Mountains">
+       </div>
+       <div class="column">
+         <img class="demo" src="images/port4.jpg" onclick="currentSlide(4)" alt="This website was a rejuvenate and reboot an apple picking farm’s website, Crunican Orchards. I decided to start with their logo, making it a simple yet effective. I styled the name, and decided to put an apple on top so people would refer to their apple-picking company. With their website, I tried my best to use the colour red as much as possible, since people refer the colour red too apples. The colour scheme I choose was red and white. Their background was a wood texture, since their wooden store is in most of their photos and popular.">
+       </div>
+
+       <div class="column">
+         <img class="demo" src="images/port5.jpg" onclick="currentSlide(5)" alt="Trolltunga">
+       </div>
+
+       <div class="column">
+         <img class="demo" src="images/port6.jpg" onclick="currentSlide(6)" alt="Mountains">
+       </div>
      </div>
--->
+   </div>
 
     <footer class="row">
     	<div class="small-12 small-centered large-12 columns">
