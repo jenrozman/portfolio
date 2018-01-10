@@ -36,28 +36,28 @@
       </header>
 
 
-   <div class="row">
-     <div class="small-4 columns">
-       <img src="images/port1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-     </div>
-     <div class=" small-4 columns">
-       <img src="images/port2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-     </div>
-     <div class="small-4 columns">
-       <img src="images/port3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-     </div>
-   </div>
-   <div class="row">
-     <div class="small-4 columns">
-       <img src="images/port4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-     </div>
-     <div class=" small-4 columns">
-       <img src="images/port5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
-     </div>
-     <div class="small-4 columns">
-       <img src="images/port6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
-     </div>
-   </div>
+      <div class="row portImg">
+      <div class="large-4 port1 columns">
+        <img src="images/port1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </div>
+      <div class=" large-4 port2 columns">
+        <img src="images/port2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+      </div>
+      <div class="large-4 port3 columns">
+        <img src="images/port3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-4 port4 portImg columns">
+        <img src="images/port4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+      </div>
+      <div class=" large-4 port5 portImg columns">
+        <img src="images/port5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+      </div>
+      <div class="large-4 port6 portImg columns">
+        <img src="images/port6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+      </div>
+    </div>
 
    <!-- Lightbox -->
    <div id="myModal" class="modal">
@@ -66,26 +66,32 @@
 
        <div class="mySlides">
          <img src="images/port1.jpg" style="width:100%" alt="image1">
+         <p class="portfolioInfo">placeholder</p>
        </div>
 
        <div class="mySlides">
          <img src="images/port2.jpg" style="width:100%" alt="image2">
+         <p class="portfolioInfo">placeholder</p>
        </div>
 
        <div class="mySlides">
          <img src="images/port3.jpg" style="width:100%" alt="image3">
+         <p class="portfolioInfo">placeholder</p>
        </div>
 
        <div class="mySlides">
          <img src="images/port4.jpg" style="width:100%" alt="image1">
+         <p class="portfolioInfo">placeholder</p>
        </div>
 
        <div class="mySlides">
          <img src="images/port5.jpg" style="width:100%" alt="image2">
+         <p class="portfolioInfo">placeholder</p>
        </div>
 
        <div class="mySlides">
          <img src="images/port6.jpg" style="width:100%" alt="image3">
+         <p class="portfolioInfo">placeholder</p>
        </div>
 
 
@@ -97,28 +103,31 @@
        </div>
 
        <!-- Thumbnail image controls -->
+
        <div class="column">
-         <img class="demo" src="images/port1.jpg" onclick="currentSlide(1)" alt="This website was a rejuvenate and reboot an apple picking farm’s website, Crunican Orchards. I decided to start with their logo, making it a simple yet effective. I styled the name, and decided to put an apple on top so people would refer to their apple-picking company. With their website, I tried my best to use the colour red as much as possible, since people refer the colour red too apples. The colour scheme I choose was red and white. Their background was a wood texture, since their wooden store is in most of their photos and popular.">
+         <img class="demo" src="images/port1.jpg" onclick="currentSlide(1)" alt="Jasmine Teaching Business Card ">
        </div>
 
        <div class="column">
-         <img class="demo" src="images/port2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+         <img class="demo" src="images/port2.jpg" onclick="currentSlide(2)" alt="Lashes By Jasmine gift certificate">
        </div>
 
        <div class="column">
-         <img class="demo" src="images/port3.jpg" onclick="currentSlide(3)" alt="Mountains">
-       </div>
-       <div class="column">
-         <img class="demo" src="images/port4.jpg" onclick="currentSlide(4)" alt="This website was a rejuvenate and reboot an apple picking farm’s website, Crunican Orchards. I decided to start with their logo, making it a simple yet effective. I styled the name, and decided to put an apple on top so people would refer to their apple-picking company. With their website, I tried my best to use the colour red as much as possible, since people refer the colour red too apples. The colour scheme I choose was red and white. Their background was a wood texture, since their wooden store is in most of their photos and popular.">
+         <img class="demo" src="images/port3.jpg" onclick="currentSlide(3)" alt="Adirondack Chairs">
        </div>
 
        <div class="column">
-         <img class="demo" src="images/port5.jpg" onclick="currentSlide(5)" alt="Trolltunga">
+         <img class="demo" src="images/port4.jpg" onclick="currentSlide(4)" alt="Sunset over Lake Huron">
        </div>
 
        <div class="column">
-         <img class="demo" src="images/port6.jpg" onclick="currentSlide(6)" alt="Mountains">
+         <img class="demo" src="images/port5.jpg" onclick="currentSlide(5)" alt="London Ontario Graffiti">
        </div>
+
+       <div class="column">
+         <img class="demo" src="images/port6.jpg" onclick="currentSlide(6)" alt="Grafico Agency Business Card">
+       </div>
+
      </div>
    </div>
 
@@ -128,6 +137,7 @@
         </div><!--nav?-->
     </footer>
     <script src="js/portfolio.js"></script>
+    <script src="js/portfoliodb.js"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script> <!--detects if the user is click an input, or using the keyboard to input, if using keyboard, probably visually impared and highlights things, not a huge deal right now but good to know-->
     <script src="js/vendor/foundation.js"></script>

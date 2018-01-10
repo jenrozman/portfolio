@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors',1);
+error_reporting(E_ALL);
 require_once("admin/scripts/config.php");
 
 if(isset($_POST['submit'])){
@@ -70,7 +72,7 @@ if(isset($_POST['submit'])){
         <div class="small-12 medium-8 medium-centered large-6 columns">
           <section id="Form">
             <h2 class="hide">Form</h2>
-          <form action="form.php" id="contactForms" method="post" >
+          <form action="contact.php" id="contactForms" method="post" >
               <input name='name' type="text" required id="contname" placeholder="Name">
               <input name='email' type="email" required id="email" placeholder="Email">
               <input name='notrobot' class="hide" type="text" required id="robot" placeholder="Address">
