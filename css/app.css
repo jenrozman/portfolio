@@ -144,9 +144,7 @@ text-align: center;}
 }
 .portImg{margin-top: 15px;}
 
-
-/* Style the buttons */
-
+.portfolioInfo{display: none;}
 .showall{
 	font-family: 'amatic', times, serif;
 	font-size: 3em;
@@ -160,15 +158,13 @@ text-align: center;}
   display: table;
   clear: both;
 }
-
-/* Create four equal columns that floats next to eachother */
 .column {
   float: left;
   width: 30%;
 	margin-bottom: 10px;
 }
 #myModal{background-color: rgba(0, 0, 0, 0.93)}
-/* The Modal (background) */
+
 .modal {
   display: none;
   position: fixed;
@@ -183,7 +179,6 @@ text-align: center;}
 	margin-top: 60px;
 }
 
-/* Modal Content */
 .modal-content {
   position: relative;
   background-color: #fefefe;
@@ -194,7 +189,6 @@ text-align: center;}
 	margin-top: -40px;
 }
 
-/* The Close Button */
 .close {
   color: white;
   position: absolute;
@@ -211,13 +205,10 @@ text-align: center;}
   cursor: pointer;
 }
 
-/* Hide the slides by default */
 .mySlides {
   display: none;
 }
 
-
-/* Caption text */
 .caption-container {
   background-color: rgba(0, 0, 0, 0.93);
 	font-family: 'dual300', times, serif;

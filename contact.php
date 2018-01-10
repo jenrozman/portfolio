@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
         <div class="small-8 large-8 columns">
           <img src="images/name.png" alt="Jen Rozman">
           </div>
-          <nav class="small-12 medium-12 large-8 large-push-1 nav columns">
+          <nav class="small-12 medium-12 large-8 nav columns">
             <h2 class="hide">Main Navigation</h2>
                 <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="large">
                <button class="menu-icon float-right" type="button" data-toggle></button>
