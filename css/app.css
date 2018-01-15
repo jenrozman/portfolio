@@ -146,17 +146,7 @@ p{margin-bottom: 0px;}
 text-align: center;}
 
 /*Skills*/
-.skills{
-	background: rgba(192, 46, 41, 1);
-	border-radius: 6px 6px 0 0;
-	padding: 0 15px 0 15px;
-}
-.skicon{
-	padding: 10px 0 0 25px;
-	border-radius: 0 6px 6px 6px;
-	background: rgba(192, 46, 41, 1);
-
-}
+.skill{margin-top:20px;}
 
 /*Portfolio*/
 .port{
