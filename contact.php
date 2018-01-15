@@ -11,15 +11,13 @@ if(isset($_POST['submit'])){
   //$direct = "Thank you!";
 
   if($robot == ""){
-    $mail = submitMessage($name, $email, $message );//$direct
+    $mail = submitMessage($name, $email, $message);//$direct
   }else{
     die("Get out of here Terminator!");
     exit();
   }
 }
 ?>
-
-
 
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
@@ -74,9 +72,10 @@ if(isset($_POST['submit'])){
           <form action="contact.php" id="contactForms" method="post" >
               <input name='name' type="text" required id="contname" placeholder="Name">
               <input name='email' type="email" required id="email" placeholder="Email">
-              <input name='robot' type="hidden" id="robot" placeholder="Address">
+              <input name='robot' type="hidden" id="robot" placeholder="phone">
               <input name='message' type="text" required id="message" placeholder="Message">
-              <input name="submit" id="submit" type="submit" value="Submit">
+              <button name="submit" type="submit" id="submit" data-submit="...Sending">Submit</button>
+            <!--  <input name="submit" id="submit" type="submit" value="Submit">-->
             </form>
           </section>
        </div>

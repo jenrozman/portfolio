@@ -1,149 +1,154 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jen Rozman: Portfolio</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+</head>
+
+<body>
     <header class="head">
-      <div class="row top">
-    	<div class="small-4 large-4 columns">
-        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-        </div>
-        <div class="small-8 large-8 columns">
-          <img src="images/name.png" alt="Jen Rozman">
-          </div>
-          <nav class="small-12 medium-12 large-8 nav columns">
-            <h2 class="hide">Main Navigation</h2>
+        <div class="row top">
+            <div class="small-4 large-4 columns">
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="small-8 large-8 columns">
+                <img src="images/name.png" alt="Jen Rozman">
+            </div>
+            <nav class="small-12 medium-12 large-8 nav columns">
+                <h2 class="hide">Main Navigation</h2>
                 <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="large">
-               <button class="menu-icon float-right" type="button" data-toggle></button>
+                    <button class="menu-icon float-right" type="button" data-toggle></button>
                 </div>
                 <div id="main-menu">
-                  <ul id="mainNav">
+                    <ul id="mainNav">
                         <li><a href="about.html">About Me</a></li>
                         <li><a href="skills.html">Skills</a></li>
                         <li><a class="active" href="portfolio.html">Portfolio</a></li>
                         <li><a href="contact.php">Contact Me</a></li>
                     </ul>
                 </div>
-           </nav>
+            </nav>
         </div>
-      </header>
+    </header>
 
 
-      <div class="row portImg">
-      <div class="large-4 port1 columns">
-        <img src="images/port1-thumb.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-      </div>
+    <div class="row portImg">
+        <div class="large-4 port1 columns">
+            <img src="images/port1-thumb.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
 
 
-      <div class=" large-4 port2 columns">
-        <img src="images/port2-thumb.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-      </div>
-      <div class="large-4 port3 columns">
-        <img src="images/port3-thumb.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-      </div>
+        <div class=" large-4 port2 columns">
+            <img src="images/port2-thumb.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="large-4 port3 columns">
+            <img src="images/port3-thumb.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
     </div>
 
     <div class="row">
-      <div class="large-4 port4 portImg columns">
-        <img src="images/port4-thumb.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-      </div>
-      <div class=" large-4 port5 portImg columns">
-        <img src="images/port7-thumb.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
-      </div>
-      <div class="large-4 port6 portImg columns">
-        <img src="images/port6-thumb.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
-      </div>
+        <div class="large-4 port4 portImg columns">
+            <img src="images/port4-thumb.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+        <div class=" large-4 port5 portImg columns">
+            <img src="images/port7-thumb.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+        </div>
+        <div class="large-4 port6 portImg columns">
+            <img src="images/port6-thumb.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+        </div>
     </div>
 
-   <!-- Lightbox -->
-   <div id="myModal" class="modal">
-     <span class="close cursor" onclick="closeModal()">&times;</span>
-     <div class="modal-content">
+    <!-- Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
 
-       <div class="mySlides">
-         <img src="images/port1.jpg"  alt="image1">
-         <p class="portfolioInfo">placeholder</p>
-       </div>
+            <div class="mySlides">
+                <img src="images/port1.jpg" alt="image1">
+                <p class="portfolioInfo">placeholder</p>
+            </div>
 
-       <div class="mySlides">
-         <img src="images/port2.jpg" alt="image2">
-         <p class="portfolioInfo">placeholder</p>
-       </div>
+            <div class="mySlides">
+                <img src="images/port2.jpg" alt="image2">
+                <p class="portfolioInfo">placeholder</p>
+            </div>
 
-       <div class="mySlides">
-         <img src="images/port3.jpg"  alt="image3">
-         <p class="portfolioInfo">placeholder</p>
-       </div>
+            <div class="mySlides">
+                <img src="images/port3.jpg" alt="image3">
+                <p class="portfolioInfo">placeholder</p>
+            </div>
 
-       <div class="mySlides">
-         <img src="images/port4.jpg"  alt="image1">
-         <p class="portfolioInfo">placeholder</p>
-       </div>
+            <div class="mySlides">
+                <img src="images/port4.jpg" alt="image1">
+                <p class="portfolioInfo">placeholder</p>
+            </div>
 
-       <div class="mySlides">
-         <img src="images/port7.jpg" alt="image2">
-         <p class="portfolioInfo">placeholder</p>
-       </div>
+            <div class="mySlides">
+                <img src="images/port7.jpg" alt="image2">
+                <p class="portfolioInfo">placeholder</p>
+            </div>
 
-       <div class="mySlides">
-         <img src="images/port6.jpg"  alt="image3">
-         <p class="portfolioInfo">placeholder</p>
-       </div>
-
-
+            <div class="mySlides">
+                <img src="images/port6.jpg" alt="image3">
+                <p class="portfolioInfo">placeholder</p>
+            </div>
 
 
-       <!-- Caption text -->
-       <div class="caption-container">
-         <p id="caption">TEST</p>
-       </div>
 
-       <!-- Thumbnail image controls -->
 
-              <div class="column">
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption">TEST</p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+
+            <div class="column">
                 <img class="demo" src="images/port1-thumb.jpg" onclick="currentSlide(1)" alt="Jasmine Teaching Business Card ">
-              </div>
+            </div>
 
-              <div class="column">
+            <div class="column">
                 <img class="demo" src="images/port2-thumb.jpg" onclick="currentSlide(2)" alt="Lashes By Jasmine gift certificate">
-              </div>
+            </div>
 
-              <div class="column">
+            <div class="column">
                 <img class="demo" src="images/port3-thumb.jpg" onclick="currentSlide(3)" alt="Adirondack Chairs">
-              </div>
+            </div>
 
-              <div class="column">
+            <div class="column">
                 <img class="demo" src="images/port4-thumb.jpg" onclick="currentSlide(4)" alt="Sunset over Lake Huron">
-              </div>
+            </div>
 
-              <div class="column">
+            <div class="column">
                 <img class="demo" src="images/port7-thumb.jpg" onclick="currentSlide(5)" alt="London Ontario Graffiti">
-              </div>
+            </div>
 
-              <div class="column">
+            <div class="column">
                 <img class="demo" src="images/port6-thumb.jpg" onclick="currentSlide(6)" alt="Grafico Agency Business Card">
-              </div>
+            </div>
 
-     </div>
-   </div>
+        </div>
+    </div>
 
     <footer class="row">
-    	<div class="small-12 small-centered large-12 columns">
-        	<p class="copy">&copy;2017-JenRozman</p>
-        </div><!--nav?-->
+        <div class="small-12 small-centered large-12 columns">
+            <p class="copy">&copy;2017-JenRozman</p>
+        </div>
+        <!--nav?-->
     </footer>
     <script src="js/portfolio.js"></script>
     <script src="js/portfoliodb.js"></script>
     <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script> <!--detects if the user is click an input, or using the keyboard to input, if using keyboard, probably visually impared and highlights things, not a huge deal right now but good to know-->
+    <script src="js/vendor/what-input.js"></script>
+    <!--detects if the user is click an input, or using the keyboard to input, if using keyboard, probably visually impared and highlights things, not a huge deal right now but good to know-->
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
-  </body>
+</body>
+
 </html>
