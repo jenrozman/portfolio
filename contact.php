@@ -4,15 +4,14 @@ error_reporting(E_ALL);
 require_once("admin/scripts/config.php");
 
 if(isset($_POST['submit'])){
-
   $name = $_POST['name'];
   $email = $_POST['email'];
   $message = $_POST['message'];
-  $robot = $_POST['notrobot'];
-  $direct = "thanks.php";
+  $robot = $_POST['robot'];
+  //$direct = "Thank you!";
 
   if($robot == ""){
-    $mail = submitMessage($name, $email, $message, $direct);
+    $mail = submitMessage($name, $email, $message );//$direct
   }else{
     die("Get out of here Terminator!");
     exit();
@@ -42,7 +41,7 @@ if(isset($_POST['submit'])){
         <div class="small-8 large-8 columns">
           <img src="images/name.png" alt="Jen Rozman">
           </div>
-          <nav class="small-12 medium-12 large-8 nav columns">
+          <nav class="small-12 medium-12 large-8  nav columns">
             <h2 class="hide">Main Navigation</h2>
                 <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="large">
                <button class="menu-icon float-right" type="button" data-toggle></button>
@@ -75,9 +74,9 @@ if(isset($_POST['submit'])){
           <form action="contact.php" id="contactForms" method="post" >
               <input name='name' type="text" required id="contname" placeholder="Name">
               <input name='email' type="email" required id="email" placeholder="Email">
-              <input name='notrobot' class="hide" type="text" required id="robot" placeholder="Address">
+              <input name='robot' type="hidden" id="robot" placeholder="Address">
               <input name='message' type="text" required id="message" placeholder="Message">
-              <input id="submit" type="submit" value="Submit">
+              <input name="submit" id="submit" type="submit" value="Submit">
             </form>
           </section>
        </div>

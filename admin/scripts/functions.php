@@ -11,6 +11,11 @@ while ($row = mysqli_fetch_assoc($result)){
   $rows[] = $row;
 }
 
+
+
+
+
+
 echo json_encode($rows);
 
 // get a portPiece
@@ -35,5 +40,5 @@ if (isset($_GET['getVideos'])) {
 
   while($row = mysqli_fetch_assoc($result)) {
     $rows[] = $row;
-  }
+  }}
  ?>
