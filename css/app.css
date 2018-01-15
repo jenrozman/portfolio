@@ -1,3 +1,25 @@
+.main_div
+  {
+  text-align:center;
+  background: #00C492;
+  padding:20px; width: 400px;
+  }
+.inner_div
+  {
+  background: #fff;
+  margin-top:20px;
+  height: 100px;
+  }
+.buttons a
+  {
+  font-size: 16px;
+  }
+.buttons a:hover
+  {
+  cursor:pointer;
+  font-size: 16px;
+  }
+
 /*Amatic*/
 @font-face {
 		font-family: 'amaticbold';
@@ -124,17 +146,7 @@ p{margin-bottom: 0px;}
 text-align: center;}
 
 /*Skills*/
-.skills{
-	background: rgba(192, 46, 41, 1);
-	border-radius: 6px 6px 0 0;
-	padding: 0 15px 0 15px;
-}
-.skicon{
-	padding: 10px 0 0 25px;
-	border-radius: 0 6px 6px 6px;
-	background: rgba(192, 46, 41, 1);
-
-}
+.skill{margin-top:20px;}
 
 /*Portfolio*/
 .port{
@@ -161,7 +173,7 @@ text-align: center;}
   width: 30%;
 	margin-bottom: 10px;
 }
-#myModal{background-color: rgba(0, 0, 0, 0.93)}
+#myModal{background-color: rgba(0, 0, 0, 0.5)}
 
 .modal {
   display: none;
@@ -227,7 +239,6 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
-}
 
 /*Contact*/
 #contact{
@@ -252,7 +263,7 @@ padding-top: 100px;}
 
 #Form {margin:10px 0 25px 0;}
 
-input#contname, #email, #message{
+input#name, #email, #message{
 	font-family: 'dual300', times, serif;
 	border-radius: 3px;
 	color: black;
@@ -260,11 +271,12 @@ input#contname, #email, #message{
 input::placeholder{color: #231f20;
 }
 
-#submit{
+ button#submit{
 	border-radius: 6px;
 	font-family: 'dual300', times, serif;
 	margin: 0 auto;
 	display: block;
+background-color: white;
 }
 
 /*Media Queries*/
@@ -310,5 +322,3 @@ input::placeholder{color: #231f20;
 		font-size: 3.125em;
 	}
 }
-.skicon{display:none;}
-.mystyle{display: inline-block;}

@@ -1,7 +1,7 @@
 <?php
 //connects you to the db
 $user = "root";//locally only, unless we go in and change it
-$pass = "root";//windows
+$pass = "";//windows
 $url = "localhost"; //where is the server running, for both mac/pc
 $db = "db_portfolio";//the db you wantafter this, everything else should stay the same!
 $conn = mysqli_connect($url, $user, $pass, $db);
