@@ -273,7 +273,7 @@ padding-top: 100px;}
 
 #Form {margin:10px 0 25px 0;}
 
-input#contname, #email, #message{
+input#name, #email, #message{
 	font-family: 'dual300', times, serif;
 	border-radius: 3px;
 	color: black;

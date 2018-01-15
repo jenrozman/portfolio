@@ -10,12 +10,12 @@ function redirect_to($location){//The issue is in here!
   }
 }*/
 function submitMessage($name, $email, $message){//, $direct
-  $subject = "Email from portfolio site";
+  //$subject = "Email from portfolio site";
   $youremail = "contactme@jrozman.com";
   //$formatTo = $email . " has sent you an email \n\n" . $name . " is their name \n\n" . $message;
-  $confirm = " Copy of the message: " . $name . " has sent you an email \n\n" . $email . " is their email. \n\n";//WORKING
+  $confirm = " The message: \n\n" . $message . " \n\n Sent by" . $name . " at" . $email;//WORKING
 
-  @mail($youremail,$subject,$confirm);
+  @mail($subject, $youremail, $confirm);
 
 // $direct = $direct."?name={$name}";
 //  redirect_to($direct);

@@ -70,7 +70,7 @@ if(isset($_POST['submit'])){
           <section id="Form">
             <h2 class="hide">Form</h2>
           <form action="contact.php" id="contactForms" method="post" >
-              <input name='name' type="text" required id="contname" placeholder="Name">
+              <input name='name' type="text" required id="name" placeholder="Name">
               <input name='email' type="email" required id="email" placeholder="Email">
               <input name='robot' type="hidden" id="robot" placeholder="phone">
               <input name='message' type="text" required id="message" placeholder="Message">
